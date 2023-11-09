@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* css */
+#projects {
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    width: 30%; /* Each item takes up less than a third of the container width */
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a shadow to each project box */
+    background-color: #f9f9f9; /* Light grey background */
+    color: #333; /* Dark grey text color */
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px; /* Optional: rounds the corners of the box */
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: rounds the corners of the images */
+}
+
+@media (max-width: 800px) {
+    .project-item {
+        width: 48%; /* For smaller screens, go for a 2-column layout */
+    }
+}
+
+@media (max-width: 500px) {
+    .project-item {
+        width: 100%; /* On very small screens, stack the items */
+    }
+}
+
+/* css2 */
+.project-item a {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
